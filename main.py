@@ -155,6 +155,8 @@ def myaku(query, proxy=None):
                 if res is None:
                     return "bad_proxy"
                 updated_cells = res.json().get("updated_cells")
+                if updated_cells is None:
+                    continue
                 if len(updated_cells) == 0:
                     log(f"{red}failed{white} to spawn ({_ + 1}) !")
                     continue
@@ -247,6 +249,7 @@ join {green}@sdsproject{white} for more !
     results = []
     while True:
         for data in datas:
+            print("~" * 50)
             while True:
                 proxy = None if len(proxies) == 0 else proxies[p % len(proxies)]
                 if proxy is None:
