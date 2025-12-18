@@ -137,7 +137,7 @@ def myaku(query, proxy=None):
             user_res[name] = amount
         if not first:
             if user_res.get("energy") < 5:
-                return (25 - user_res.get("energy")) * 600
+                return (20 - user_res.get("energy")) * 600
         log(f"{green}total empty cell{white} {empty_cell}")
         if empty_cell != 0:
             log(f"try to spawn {green}{empty_cell}{white} item")
