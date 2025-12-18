@@ -1,0 +1,8 @@
+__pycache__
+*.json
+*.txt
+!requirements.txt
+*.log
+asli.py
+de.py
+tes.py
