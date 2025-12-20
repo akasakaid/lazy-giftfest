@@ -7,6 +7,7 @@ Auto play/Auto merge game @giftfest telegram bot
 * Auto merge / Play game
 * Daily check in
 * Mengecek daily task
+* Klaim reward / join undian di main quest
 
 ## Cara menggunakan
 
@@ -49,6 +50,27 @@ Setelah semua itu, eksekusi file main.py
 ```
 python main.py
 ```
+
+## Cara mendapatkan query data akun
+
+1. Kamu harus mengaktifkan opsi devtool diaplikasi telegram desktop. Kamu bisa menonton video ini [https://www.youtube.com/watch?v=NYxHmck_GjE&pp=0gcJCTwKAYcqIYzv](https://www.youtube.com/watch?v=NYxHmck_GjE&pp=0gcJCTwKAYcqIYzv)
+   
+2. Kemudian buka miniapp bot telegramnya dan buka menu devtool.
+   
+3. Klik menu **console** biasanya terdapat disebelah menu **element** dan paste kode javascript berikut
+
+```javascript
+copy(decodeURIComponent(sessionStorage.getItem('tapps/launchParams').split('tgWebAppData=')[1].split('&tgWebAppVersion')[0]))
+```
+
+   Kode javascript diatas sudah otomatis mengcopy data akun dan kamu bisa mempastenya di file `data.txt`
+    
+   Jika kamu mendapatkan teks peringatan / tidak bisa melakukan paste kode diatas, ketik dulu kode berikut
+
+```
+allow pasting
+```
+   Jika sudah, coba ulangi lagi paste kode javascript diatas!
 
 ## Diskusi
 

@@ -72,8 +72,4 @@ def http(ses: httpx.Client, url: str, data=None):
 
 if __name__ == "__main__":
     # print('token is expired :',token_is_expired('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NjQ5MjM1MDgsInVzZXJfaWQiOiI2OTU5MzYyMjk0In0.v1CjRMiRthN7Vw9EuWxazTkTCDTn3uVzTGTtw15NdwE'))
-    print(
-        parse_query_data(
-            "user=%7B%22id%22%3A6959362294%2C%22first_name%22%3A%22Samet%20%C5%9Fahin%22%2C%22last_name%22%3A%22%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FdEd38qoLuZRwkyYO75AwJRRpV6ZHWAFk4KY2s6u7s9X5ondJ-o2fNLTQx3ktwN9G.svg%22%7D&chat_instance=-7668059221342750541&chat_type=private&start_param=UkM9MDAwMDAwZ2IzYjImUlM9aW52aXRlX2ZyaWVuZA%3D%3D&auth_date=1764900913&signature=zMeM-Bhz8kOf7BGZ6H9djd3_yXFtBoslbdX3mRikvnDpEUyUxLGN7jG7ih6WIWYZhu_xvOc54iFWzT-z7XRAAA&hash=fbccdfe6ab2b0c6ae684dd675a5846d9b8d3bad280e788d51a4499b479bd3bbd"
-        )
-    )
+    print()
